@@ -1,0 +1,25 @@
+{
+  "name": "NotiFi",
+  "version": "1.0",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/finance?tab=yourstocks*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Your Stocks"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["tabs"],
+  
+  "web_accessible_resources": [
+    "pepper.jpg",
+	"triplepepper.png"
+
+  ]
+  
+}
