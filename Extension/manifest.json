@@ -1,5 +1,5 @@
 {
-  "name": "NotiFi",
+  "name": "Extra Spricy",
   "version": "1.0",
   "manifest_version": 2,
   "content_scripts": [
@@ -8,8 +8,19 @@
       "js": ["content.js"]
     }
   ],
+  "icons": {
+      "16": "Icon16.png",
+      "32": "Icon32.png",
+      "48": "Icon48.png",
+      "128": "Icon128.png"
+  },
   "browser_action": {
-    "default_title": "Your Stocks"
+    "default_title": "Your Stocks",
+    "default_icon": {
+      "16": "Icon16.png",
+      "32": "Icon32.png"
+    },
+    "default_popup": "popup.html"
   },
   "background": {
     "scripts": ["background.js"]
@@ -21,5 +32,4 @@
 	"triplepepper.png"
 
   ]
-  
 }
