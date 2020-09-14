@@ -1,6 +1,6 @@
 const re = new RegExp('(?<=vjQh1d \"\>)[A-Z]{1,10}','g')
 const matches = document.documentElement.innerHTML.match(re) || []
-
+//hi it's Jesse
 const img = chrome.extension.getURL('triplepepper.png')
 
 //</span><span class="vjQh1d ">
