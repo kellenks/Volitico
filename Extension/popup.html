@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Sprice</title>
 </head>
-<body style="background-color:#0F0;width:160px;height:90px;">
+<style>
+    .boxed {
+   border: 1px solid black;
+   border-radius: 5px;
+   padding: 10px;
+  }
+  .gray {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(50%);
+}
+
+</style>
+
+<body style="background-color:#FFFFFF;font-family:'Garamond';font-size:20px;width:160px;height:300px;">
   <div id="status">
-    <button id="getResults">Get Results</button>
+  <div class="boxed">what's spricy today?</div>
+    <p id="date"></p>
+    <p>Date/Time: <span id="datetime"></span></p>
+   <script>
+    var dt = new Date();
+    document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+    </script>
+    <!--<button id="getResults">Get Results</button>-->
+    <input type='date' id='hasta' value='<?php echo date('Y-m-d');?>
+    <br> <img src="16sprice3.png" alt="extra spricy">
+    <br> <img src="16sprice2.png" alt="pretty spricy">
+    <br> <img src="16sprice.png" alt="a bit spricy">
+    <br> <a href="https://www.google.com/finance">Click Click</a>
+      <!--<button id="index_link">My text</button> -->
       <h4 id="results"></h4>
     </div>
 <body>
-  <script src="popup.js" charset="utf-8"></script>
+  <script src="popup.js" charset="utf-8";</script>
 </body>
 </html>

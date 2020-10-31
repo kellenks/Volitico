@@ -26,6 +26,7 @@
     "scripts": ["background.js"]
   },
   "permissions": ["tabs"],
+
   
   "web_accessible_resources": [
     "pepper.jpg",
